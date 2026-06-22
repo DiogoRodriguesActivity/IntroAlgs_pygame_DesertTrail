@@ -21,19 +21,25 @@ class Jogo(object):
         # Fonte do Jogo
         font = pygame.font.Font(None, 36)
 
-        pygame.mixer.init()
+        som_ativo = True
 
-        # Area para quem for adicionar as musicas e efeitos sonoros
-        pygame.mixer.music.load("assets/sons/purrsahfef-8-bit-space-123218.mp3")
-        pygame.mixer.music.set_volume(0.3)  # volume de 0.0 a 1.0
-        pygame.mixer.music.play(-1)         # -1 = loop infinito
+        try:
+            pygame.mixer.init()
+        except pygame.error as e:
+            print(f"Audio desabilitado: {e}")
+            som_ativo = False
+        if som_ativo:
+            # Area para quem for adicionar as musicas e efeitos sonoros
+            pygame.mixer.music.load("assets/sons/purrsahfef-8-bit-space-123218.mp3")
+            pygame.mixer.music.set_volume(0.3)  # volume de 0.0 a 1.0
+            pygame.mixer.music.play(-1)         # -1 = loop infinito
 
-        # Efeitos Sonoros
-        acerto = pygame.mixer.Sound("assets/sons/win.mp3")
-        erro = pygame.mixer.Sound("assets/sons/gameover.mp3")
-        
-        # Canal dedicado para os efeitos (para sabermos quando terminam)
-        canal_efeitos = pygame.mixer.Channel(0)
+            # Efeitos Sonoros
+            acerto = pygame.mixer.Sound("assets/sons/win.mp3")
+            erro = pygame.mixer.Sound("assets/sons/gameover.mp3")
+            
+            # Canal dedicado para os efeitos (para sabermos quando terminam)
+            canal_efeitos = pygame.mixer.Channel(0)
 
         # Pontuação de cada pergunta da esfinge: 1ª, 2ª e 3ª (a 3ª é só bônus)
         PONTOS_PERGUNTA = [50, 50, 100]
@@ -201,13 +207,15 @@ class Jogo(object):
                                 if vidas_esfinge <= 0:
                                     # ACABOU AS VIDAS DA ESFINGE: volta pro começo da fase
                                     # (pontos_acumulados_quiz é descartado, nunca foi pra config.pontuacao)
-                                    pygame.mixer.music.stop()
-                                    canal_efeitos.play(erro)
-                                    musica_pausada_por_efeito = True
+                                
+                                    if som_ativo:
+                                        pygame.mixer.music.stop()
+                                        canal_efeitos.play(erro)
+                                        musica_pausada_por_efeito = True
 
-                                    estado = "REINICIAR_FASE"
-                                    motivo_derrota = "ESFINGE"
-                                    tempo_derrota = pygame.time.get_ticks()
+                                        estado = "REINICIAR_FASE"
+                                        motivo_derrota = "ESFINGE"
+                                        tempo_derrota = pygame.time.get_ticks()
 
                                 else:
                                     # Não perdeu tudo ainda: deixa claro que pode tentar de novo
@@ -225,9 +233,10 @@ class Jogo(object):
                             # Só agora os pontos da tentativa são confirmados de verdade.
                             config.pontuacao += pontos_acumulados_quiz
 
-                            pygame.mixer.music.stop()
-                            canal_efeitos.play(acerto)
-                            musica_pausada_por_efeito = True
+                            if som_ativo:
+                                pygame.mixer.music.stop()
+                                canal_efeitos.play(acerto)
+                                musica_pausada_por_efeito = True
 
                             if config.fase_atual < 3:
 
@@ -289,10 +298,11 @@ class Jogo(object):
                     estado = "BOSS"
 
             # CONTEXTO DE ÁUDIO AUTOMÁTICO: Se o efeito acabou de tocar, volta a trilha sonora
-            if musica_pausada_por_efeito and not canal_efeitos.get_busy():
-                if estado not in ["VENCEU"]:  # Não reinicia a trilha se o jogo acabou
-                    pygame.mixer.music.play(-1)
-                musica_pausada_por_efeito = False
+            if som_ativo:
+                if musica_pausada_por_efeito and not canal_efeitos.get_busy():
+                    if estado not in ["VENCEU"]:  # Não reinicia a trilha se o jogo acabou
+                        pygame.mixer.music.play(-1)
+                    musica_pausada_por_efeito = False
 
             # --- DESENHO NA TELA ---
             if estado == "MENU":
