@@ -1,0 +1,168 @@
+{
+  "1": [
+    {
+      "pergunta": "Qual animal tem o corpo da Esfinge?",
+      "opcoes": ["a) Leão", "b) Cachorro", "c) Cavalo", "d) Falcão"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Em qual continente se localiza o Egito?",
+      "opcoes": ["a) Ásia", "b) Europa", "c) África", "d) Oceania"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Qual é a capital da França?",
+      "opcoes": ["a) Londres", "b) Berlim", "c) Madri", "d) Paris"],
+      "resposta_correta": "d"
+    },
+    {
+      "pergunta": "Quantas cores tem o arco-íris?",
+      "opcoes": ["a) 5", "b) 6", "c) 7", "d) 8"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Qual planeta é conhecido como Planeta Vermelho?",
+      "opcoes": ["a) Vênus", "b) Marte", "c) Júpiter", "d) Saturno"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Quanto é 8 vezes 7?",
+      "opcoes": ["a) 48", "b) 54", "c) 56", "d) 64"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Qual é o maior oceano do mundo?",
+      "opcoes": ["a) Atlântico", "b) Índico", "c) Ártico", "d) Pacífico"],
+      "resposta_correta": "d"
+    },
+    {
+      "pergunta": "Qual gás os seres humanos respiram para sobreviver?",
+      "opcoes": ["a) Oxigênio", "b) Hélio", "c) Hidrogênio", "d) Metano"],
+      "resposta_correta": "a"
+    }
+  ],
+  "2": [
+    {
+      "pergunta": "Quem escreveu a obra Dom Casmurro?",
+      "opcoes": ["a) Machado de Assis", "b) José de Alencar", "c) Clarice Lispector", "d) Guimarães Rosa"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Qual metal tem o símbolo químico Au?",
+      "opcoes": ["a) Prata", "b) Ouro", "c) Cobre", "d) Alumínio"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Quantos ossos tem um corpo humano adulto, em média?",
+      "opcoes": ["a) 180", "b) 206", "c) 250", "d) 300"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Quem pintou a Mona Lisa?",
+      "opcoes": ["a) Van Gogh", "b) Leonardo da Vinci", "c) Picasso", "d) Michelangelo"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Como as plantas produzem seu próprio alimento?",
+      "opcoes": ["a) Respiração", "b) Fotossíntese", "c) Transpiração", "d) Polinização"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Qual é o maior órgão do corpo humano?",
+      "opcoes": ["a) Coração", "b) Fígado", "c) Pele", "d) Pulmão"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Em que estado brasileiro fica a cidade de Salvador?",
+      "opcoes": ["a) Bahia", "b) Ceará", "c) Pernambuco", "d) Sergipe"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Qual instrumento mede a temperatura?",
+      "opcoes": ["a) Barômetro", "b) Termômetro", "c) Higrômetro", "d) Velocímetro"],
+      "resposta_correta": "b"
+    }
+  ],
+  "3": [
+    {
+      "pergunta": "Qual era o sistema de escrita do Egito Antigo?",
+      "opcoes": ["a) Cuneiforme", "b) Hieróglifos", "c) Alfabeto latino", "d) Runas"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Qual rio foi essencial para a civilização egípcia?",
+      "opcoes": ["a) Amazonas", "b) Tigre", "c) Nilo", "d) Danúbio"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Como era chamado o governante do Egito Antigo?",
+      "opcoes": ["a) Cônsul", "b) Faraó", "c) Xogum", "d) Czar"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Qual deus egípcio era representado com cabeça de chacal?",
+      "opcoes": ["a) Hórus", "b) Rá", "c) Anúbis", "d) Sobek"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "A Grande Esfinge está próxima de quais pirâmides?",
+      "opcoes": ["a) Gizé", "b) Teotihuacán", "c) Chichén Itzá", "d) Angkor"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Qual pedra ajudou a decifrar os hieróglifos?",
+      "opcoes": ["a) Pedra de Roseta", "b) Pedra do Sol", "c) Obsidiana", "d) Pedra de Palermo"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Quem decifrou os hieróglifos usando a Pedra de Roseta?",
+      "opcoes": ["a) Howard Carter", "b) Champollion", "c) Heródoto", "d) Tutancâmon"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Qual faraó teve a tumba descoberta por Howard Carter?",
+      "opcoes": ["a) Ramsés II", "b) Quéops", "c) Tutancâmon", "d) Akhenaton"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Na mitologia egípcia, quem era o deus do Sol?",
+      "opcoes": ["a) Rá", "b) Osíris", "c) Anúbis", "d) Thoth"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Qual órgão bombeia o sangue pelo corpo humano?",
+      "opcoes": ["a) Fígado", "b) Pulmão", "c) Rim", "d) Coração"],
+      "resposta_correta": "d"
+    },
+    {
+      "pergunta": "Qual é a raiz quadrada de 144?",
+      "opcoes": ["a) 10", "b) 11", "c) 12", "d) 14"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Qual elemento químico tem número atômico 1?",
+      "opcoes": ["a) Hélio", "b) Hidrogênio", "c) Oxigênio", "d) Carbono"],
+      "resposta_correta": "b"
+    },
+    {
+      "pergunta": "Qual é o menor número primo?",
+      "opcoes": ["a) 0", "b) 1", "c) 2", "d) 3"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Em qual camada da atmosfera ocorre a maior parte do clima?",
+      "opcoes": ["a) Troposfera", "b) Estratosfera", "c) Mesosfera", "d) Exosfera"],
+      "resposta_correta": "a"
+    },
+    {
+      "pergunta": "Qual cientista formulou as três leis do movimento?",
+      "opcoes": ["a) Einstein", "b) Galileu", "c) Newton", "d) Darwin"],
+      "resposta_correta": "c"
+    },
+    {
+      "pergunta": "Qual povo construiu a cidade de Machu Picchu?",
+      "opcoes": ["a) Maia", "b) Asteca", "c) Inca", "d) Olmeca"],
+      "resposta_correta": "c"
+    }
+  ]
+}
