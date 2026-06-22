@@ -5,4 +5,6 @@ Esse repositorio foi criado temporariamente para armazenar o prototipo do jogo d
 ## Arquivos
 
 - Src: possui todo o desenvolvimento do codigo até agora
+- Test: area para tests e consultas
+- Assets: area com as imagens usadas no projeto
 
