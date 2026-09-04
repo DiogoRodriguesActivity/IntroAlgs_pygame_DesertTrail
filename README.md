@@ -177,15 +177,15 @@ Liste funcionalidades extras que o grupo poderá implementar se conseguir conclu
 Melhorias possíveis:
 
 
-| Funcionalidades | Status | Nome do Programador |
+| Funcionalidades |  Nome do Programador | Status |
 | :--- | :---: | :---: |
-| Um Menu para o Jogo, com a logo do Jogo, background e com o Botão de Começar e o de Sair | [Diogo, Nathan, Isaque] | X |
-| Um Personagem que muda de Sprite quando está andando | [Natham] | X |
-| Documentação de como jogar o jogo | [Diogo] | X |
+| Um Menu para o Jogo, com a logo do Jogo, background e com o Botão de Começar e o de Sair | [Diogo, Nathan, Isaque] | 100% |
+| Um Personagem que muda de Sprite quando está andando | [Natham] | 65% |
+| Documentação de como jogar o jogo | [Diogo] | 100% |
 | A Customização da Fase Final, junto com o boneco da Esfinge (pode colocar uma cena de Dialogo com a Esfinge antes de começar a fase final) | [Diogo] | (Não feito) |
-| A Fase 1 Completa, além de pensar no inimigo do Jogo (Falta apenas criar um sistema de mortes) | [Diogo e Gabriel Silva] | X |
+| A Fase 1 Completa, além de pensar no inimigo do Jogo (Falta apenas criar um sistema de mortes) | [Diogo e Gabriel Silva] | 85% |
 
 | --------- Não Obrigatório --------------- | | |
 | :--- | :---: | :---: |
-| Musica para o Menu, para a Fase e para o Inimigo Final | [Isaque] | X |
-| O personagem também mudará de Sprite quando estiver pulando ou caindo | [Nathan] | (Não feito)|.
+| Musica para o Menu, para a Fase e para o Inimigo Final | [Isaque] | 85% |
+| O personagem também mudará de Sprite quando estiver pulando ou caindo | [Nathan] | 70% |.
